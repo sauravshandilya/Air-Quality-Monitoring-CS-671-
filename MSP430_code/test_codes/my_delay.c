@@ -24,7 +24,7 @@ void delay_sec(unsigned int number_of_seconds)
 		TA0R = 0;				// Timer/counter register
 		while (TA0R < delayCycles)
 			{
-				_bis_SR_register(LPM3_bits + GIE); //Enter Low Power Mode 3 with interrupts
+				_bis_SR_register(LPM0_bits + GIE); //Enter Low Power Mode 3 with interrupts
 				_no_operation();
 			}
 	}
