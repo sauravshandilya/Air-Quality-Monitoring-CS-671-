@@ -88,3 +88,9 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Code Composer Studio
+Debug/
+targetConfigs/
+*.cmd
+
